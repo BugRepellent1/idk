@@ -11,14 +11,14 @@ function queSystem() {
         quantity:0,
         name:"x",
     }
-    let guestArray = [guest];
-    
+    let guestArray = [];
+
     let table = {
         size:0,
         number:0,
         occupation:false,
     }
-    let tablesArray = [table];
+    let tablesArray = [];
 
     button.addEventListener("click", function(){
         let p = document.createElement("p");
@@ -33,7 +33,7 @@ function queSystem() {
                         alert(this.textContent);
                         this.removeChild;
                         this.tables.occupation = true;
-                        this.tables.style.backgroundcolor = "red";
+                        this.tables.style.backgroundcolor = "yellow";
                     }
                 })
             });
