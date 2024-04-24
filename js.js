@@ -24,19 +24,12 @@ function queSystem() {
         let p = document.createElement("p");
         document.outputbox.appendChild(p);
         p.textContent = name + quantity;
-        array = name + quantity;
+        guestArray = name + quantity;
 
         p.addEventListener("contextmenu",function giveTable(){
-            guestArray.forEach(guest => {
-                tablesArray.forEach(table => {
-                    if(guest.quantity <= table.size && table.occupation == false){
-                        alert(this.textContent);
-                        this.removeChild;
-                        this.tables.occupation = true;
-                        this.tables.style.backgroundcolor = "yellow";
-                    }
-                })
-            });
+            if(confirm("Vill du ge"+name+"ett bord?")){
+                
+            }
         })
     })
 }
