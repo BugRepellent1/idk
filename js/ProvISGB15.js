@@ -23,3 +23,17 @@ function buttonDisableOrEnable(){
         startButton.removeAttribute('disabled');
     }
 }
+function startClock(){
+    if(oGlobalObject.timerId !== 0){
+        clearInterval(oGlobalObject.timerId);
+    }
+    oGlobalObject.timerId = setInterval(function() {
+        document.querySelector('h2').textContent = getFormatedTimeOfDay();
+    }, 1000);
+    buttonDisableOrEnable();
+}
+function endClock(){
+    if(oGlobalObject.timerId !== 0){
+        clearInterval(oGlobalObject.timerId);
+    }
+}
