@@ -4,12 +4,17 @@
 		<title>ISGB15</title>
         <meta charset="utf-8">
         <meta name="veiwport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<script src="functions.js"></script>
 	</head>
 	<body>
-		<div id="content"></div>
-
-		
+	<div class="jumbotron text-center">
+       <h1>Min egen digitala klocka</h1>
+       <h2></h2>
+    </div>
+    <div>
+        <button id="startClock" class="btn btn-primary" onclick="startClock();">Start Clock</button>
+        <button id="endClock" class="btn btn-primary" onclick="endClock();" disabled="disabled">End Clock</button>
+    </div>
 	</body>
 </html>
