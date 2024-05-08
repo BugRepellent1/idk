@@ -1,5 +1,7 @@
 'use strict'
+
 let oGlobalObjekt = {
+
     calculateNbrOfPoints: function(ulRef) {
         let assessment = ulRef.querySelector('li[data-passedI]').getAttribute('data-passedI');
         let writtenExam = ulRef.querySelector('li[data-passedT]').getAttribute('data-passedT');
@@ -15,6 +17,14 @@ let oGlobalObjekt = {
     },
 
     getUlElments: function(){
-        return ulRef.querySelector('ul');
+        return document.querySelectorAll('ul');
     },
+
+    getNbrOfElements: function(ulRefs){
+        return ulRefs.length;
+    }
+};
+
+function init(){
+    console.log(getLiReference, getUlElments, getNbrOfElements);
 }
