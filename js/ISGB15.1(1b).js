@@ -26,6 +26,6 @@ let oGlobalObjekt = {
 };
 
 function init(){
-    window.onload('console.log(getLiReference, getUlElments, getNbrOfElements);')
+    
     console.log(getLiReference, getUlElments, getNbrOfElements);
 }
