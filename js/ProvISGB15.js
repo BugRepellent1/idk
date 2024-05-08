@@ -35,5 +35,7 @@ function startClock(){
 function endClock(){
     if(oGlobalObject.timerId !== 0){
         clearInterval(oGlobalObject.timerId);
+        document.querySelector('h2').textContent = '';
     }
+    buttonDisableOrEnable();
 }
